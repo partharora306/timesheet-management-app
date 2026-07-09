@@ -1,31 +1,31 @@
 import { NextResponse } from "next/server";
 import { Task, WeekData } from "@/types/timesheet";
 
-const WEEK_RANGE = "21 – 26 January, 2024";
+const WEEK_RANGE = "01 - 06 January, 2026";
 const WEEKLY_LIMIT = 40;
 
 // In-memory mock data (mutable)
 const weeklydata: WeekData = {
-  "Jan 21": [
+  "Jan 01": [
     { id: "1", title: "Homepage Development", hours: 4, project: "Project A" },
     { id: "2", title: "Homepage Development", hours: 2, project: "Project B" },
   ],
-  "Jan 22": [
+  "Jan 02": [
     { id: "3", title: "Homepage Development", hours: 2, project: "Project A" },
     { id: "4", title: "Homepage Development", hours: 4, project: "Project B" },
     { id: "5", title: "Homepage Development", hours: 4, project: "Project C" },
   ],
-  "Jan 23": [
+  "Jan 03": [
     { id: "6", title: "Homepage Development", hours: 4, project: "Project A" },
     { id: "7", title: "Homepage Development", hours: 4, project: "Project B" },
     { id: "8", title: "Homepage Development", hours: 4, project: "Project C" },
   ],
-  "Jan 24": [
+  "Jan 04": [
     { id: "9", title: "Homepage Development", hours: 1, project: "Project A" },
     { id: "10", title: "Homepage Development", hours: 1, project: "Project B" },
     { id: "11", title: "Homepage Development", hours: 2, project: "Project C" },
   ],
-  "Jan 25": [],
+  "Jan 05": [],
 };
 
 // ================= GET =================
