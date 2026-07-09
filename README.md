@@ -179,12 +179,6 @@ Approximately **9–10 hours**, including:
 
 ---
 
-## Repository
-
-https://github.com/partharora306/timesheet-management-app
-
----
-
 ## Notes
 
 The goal of this assessment was not to over-engineer the solution, but to demonstrate clean architecture, maintainable code, scalable frontend development practices, and a polished user experience using modern Next.js patterns.
