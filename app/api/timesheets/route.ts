@@ -5,22 +5,22 @@ let timesheets: Timesheet[] = [
   {
     id: "1",
     week: 1,
-    date: "2025-08-01",
-    endDate: "2025-08-05",
+    date: "2026-01-01",
+    endDate: "2026-01-05",
     status: "completed",
   },
   {
     id: "2",
     week: 2,
-    date: "2025-08-08",
-    endDate: "2025-08-12",
+    date: "2026-01-08",
+    endDate: "2026-01-12",
     status: "incomplete",
   },
   {
     id: "3",
     week: 3,
-    date: "2025-08-15",
-    endDate: "2025-08-19",
+    date: "2026-01-15",
+    endDate: "2026-01-19",
     status: "missing",
   },
 ];
