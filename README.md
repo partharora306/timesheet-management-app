@@ -2,7 +2,13 @@
 
 A modern SaaS-style **Timesheet Management** application built as part of the **TenTwenty Frontend Technical Assessment**.
 
-The application demonstrates modern frontend development practices using **Next.js**, **TypeScript**, **Tailwind CSS**, and **NextAuth**, with a focus on clean architecture, reusable components, responsive UI, and maintainable code.
+The application demonstrates modern frontend development practices using **Next.js**, **TypeScript**, **Tailwind CSS**, and **NextAuth**, with a strong focus on clean architecture, reusable components, responsive UI, and maintainable code.
+
+---
+
+## Live Demo
+
+https://timesheet-management-ticktock.vercel.app
 
 ---
 
@@ -10,12 +16,12 @@ The application demonstrates modern frontend development practices using **Next.
 
 - Secure authentication using **NextAuth**
 - Protected dashboard routes
-- Timesheet listing in a responsive table
+- Responsive timesheet table
 - Create and edit timesheet entries via modal
-- Form validation and error handling
-- Internal API routes for all client-side requests
-- Reusable and modular component architecture
-- Responsive design across desktop and mobile
+- Schema-based form validation using **React Hook Form** and **Zod**
+- Client-side API requests routed through **Next.js API Routes**
+- Reusable, modular, and scalable component architecture
+- Fully responsive UI optimized for desktop, tablet, and mobile
 - Basic unit/component testing
 
 ---
@@ -30,6 +36,7 @@ The application demonstrates modern frontend development practices using **Next.
 - React Hook Form
 - Zod
 - ESLint
+- Jest + React Testing Library
 
 ---
 
@@ -38,16 +45,34 @@ The application demonstrates modern frontend development practices using **Next.
 ### Prerequisites
 
 - Node.js 20+
-- npm (or yarn/pnpm)
+- npm
 
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/partharora306/timesheet-management-app.git
+
+cd timesheet-management-app
+
 npm install
 ```
 
-### Start the development server
+### Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-random-secret
+```
+
+Generate a secure secret using:
+
+```bash
+openssl rand -base64 32
+```
+
+### Start the Development Server
 
 ```bash
 npm run dev
@@ -59,19 +84,10 @@ Open **http://localhost:3000** in your browser.
 
 ## Demo Credentials
 
-Use the following credentials to log in:
-
-**Email**
-
-```text
-admin@tentwenty.com
-```
-
-**Password**
-
-```text
-Password@123
-```
+| Field | Value |
+|-------|-------|
+| **Email** | `admin@tentwenty.com` |
+| **Password** | `Password@123` |
 
 ---
 
@@ -115,22 +131,22 @@ __tests__/
 
 ## Architecture
 
-The project follows a modular, feature-oriented structure.
+The project follows a modular, feature-oriented architecture.
 
 - **App Router** is used for routing and layouts.
 - **NextAuth** manages authentication and session handling.
-- All client-side API requests are routed through **Next.js API Routes**.
-- Business logic is separated into services and utilities.
-- Components are designed to be reusable and easy to maintain.
+- Client-side API requests are proxied through **Next.js API Routes**.
+- Business logic is separated into reusable services and utilities.
+- Components are designed to be modular, reusable, and easy to maintain.
 
 ---
 
 ## Assumptions
 
-- Authentication uses dummy credentials for demonstration.
-- Timesheet data is mocked/in-memory and simulates backend APIs.
-- The application focuses on frontend architecture rather than persistence.
-- The UI is built to closely match the provided Figma design while remaining responsive.
+- Authentication uses dummy credentials for demonstration purposes.
+- Timesheet data is mocked to simulate backend APIs.
+- The focus of the assessment is frontend architecture rather than backend persistence.
+- The UI closely follows the provided Figma design while maintaining responsiveness across devices.
 
 ---
 
@@ -155,37 +171,27 @@ The project follows a modular, feature-oriented structure.
 
 ## Time Spent
 
-Approximately **9–10 hours**
+Approximately **9–10 hours**, including:
 
-- Project setup & architecture
+- Project setup and architecture
 - Authentication
 - Dashboard implementation
 - API integration
 - Form validation
 - Responsive UI
-- Testing
+- Unit testing
 - Refactoring and documentation
-
----
-
-## Live Demo
-
-```
-https://timesheet-management-ticktock.vercel.app
-```
 
 ---
 
 ## Repository
 
-```
 https://github.com/partharora306/timesheet-management-app
-```
 
 ---
 
 ## Notes
 
-The objective of this assessment was not to over-engineer the solution, but to demonstrate clean architecture, maintainable code, good UI/UX practices, and scalable frontend development using modern Next.js patterns.
+The goal of this assessment was not to over-engineer the solution, but to demonstrate clean architecture, maintainable code, scalable frontend development practices, and a polished user experience using modern Next.js patterns.
 
 Thank you for taking the time to review my submission.
