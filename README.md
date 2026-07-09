@@ -29,8 +29,6 @@ The application demonstrates modern frontend development practices using **Next.
 - NextAuth
 - React Hook Form
 - Zod
-- Axios
-- Jest + React Testing Library
 - ESLint
 
 ---
@@ -172,20 +170,16 @@ Approximately **9–10 hours**
 
 ## Live Demo
 
-> Add your deployed application URL here (e.g. Vercel)
-
 ```
-https://your-demo-url.vercel.app
+https://timesheet-management-ticktock.vercel.app
 ```
 
 ---
 
 ## Repository
 
-> Add your GitHub repository link here
-
 ```
-https://github.com/your-username/timesheet-management
+https://github.com/partharora306/timesheet-management-app
 ```
 
 ---
