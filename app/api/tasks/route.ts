@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Task, WeekData } from "@/types/timesheet";
 
-const WEEK_RANGE = "01 - 06 January, 2026";
+const WEEK_RANGE = "01 - 06 January, 2024";
 const WEEKLY_LIMIT = 40;
 
 // In-memory mock data (mutable)
