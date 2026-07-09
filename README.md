@@ -21,8 +21,6 @@ https://timesheet-management-ticktock.vercel.app
 - Schema-based form validation using **React Hook Form** and **Zod**
 - Client-side API requests routed through **Next.js API Routes**
 - Reusable, modular, and scalable component architecture
-- Fully responsive UI optimized for desktop, tablet, and mobile
-- Basic unit/component testing
 
 ---
 
@@ -36,7 +34,6 @@ https://timesheet-management-ticktock.vercel.app
 - React Hook Form
 - Zod
 - ESLint
-- Jest + React Testing Library
 
 ---
 
@@ -165,7 +162,6 @@ The project follows a modular, feature-oriented architecture.
 | Reusable Components | ✅ |
 | TypeScript | ✅ |
 | Tailwind CSS | ✅ |
-| Unit/Component Tests | ✅ |
 
 ---
 
@@ -179,7 +175,6 @@ Approximately **9–10 hours**, including:
 - API integration
 - Form validation
 - Responsive UI
-- Unit testing
 - Refactoring and documentation
 
 ---
